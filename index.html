@@ -135,9 +135,10 @@ section{padding:4.5rem 0}
   position:fixed;inset:64px 0 auto 0;z-index:99;
   background:rgba(11,13,16,.97);border-bottom:1px solid var(--line);
   display:grid;gap:.25rem;padding:1rem 1.25rem 1.5rem;
-  transform:translateY(-110%);transition:transform .3s ease;
+  transform:translateY(calc(-100% - 64px));visibility:hidden;
+  transition:transform .3s ease,visibility .3s;
 }
-.mobile-menu.open{transform:none}
+.mobile-menu.open{transform:none;visibility:visible}
 .mobile-menu a{
   font-family:var(--display);font-weight:600;text-transform:uppercase;letter-spacing:.08em;
   font-size:1.1rem;color:var(--txt);padding:.7rem .25rem;border-bottom:1px solid rgba(38,44,54,.5);
